@@ -10,7 +10,8 @@ from keras.optimizers import Adam
 import matplotlib.pyplot as plt
 import uuid
 import os
-
+st.set_page_config(page_title="NullBox", layout="wide")
+os.environ["PORT"] = os.getenv("PORT", "8501")
 IMGWIDTH = 256
 
 class Classifier:
